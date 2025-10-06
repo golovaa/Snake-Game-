@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake — Браузерная версия (HUD сверху)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <h1>Змейка</h1>
+
+    <div class="game-wrap">
+      <!-- HUD над змейкой -->
+      <div class="hud">
+        <div id="hud-status">Готово</div>
+        <div class="hud-right">
+          <div id="hud-score">Счёт: 0</div>
+          <button id="restart">Перезапуск (R)</button>
+        </div>
+      </div>
+
+      <canvas id="game" width="520" height="520"></canvas>
+    </div>
+
+    <p class="hint">Управление: стрелки • Пауза: Space • Перезапуск: R</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
