@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тетрис — GameHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Кнопка возврата -->
+    <a href="../../index.html" class="back-button" aria-label="Назад на главную">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      <span>Главная</span>
+    </a>
+
+    <div class="game-wrapper">
+      <div class="game-header">
+        <h1>Тетрис</h1>
+        <div class="score-board">
+          <div class="score-item">
+            <span class="score-label">Очки:</span>
+            <span class="score-value" id="score">0</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Уровень:</span>
+            <span class="score-value" id="level">1</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Линий:</span>
+            <span class="score-value" id="lines">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-area">
+        <div class="next-piece">
+          <h3>Следующая:</h3>
+          <canvas id="nextCanvas" width="120" height="120"></canvas>
+        </div>
+        
+        <canvas id="gameCanvas" width="300" height="600"></canvas>
+        
+        <div class="controls">
+          <h3>Управление:</h3>
+          <div class="control-item">
+            <span class="key">← →</span>
+            <span>Движение</span>
+          </div>
+          <div class="control-item">
+            <span class="key">↑</span>
+            <span>Поворот</span>
+          </div>
+          <div class="control-item">
+            <span class="key">↓</span>
+            <span>Ускорение</span>
+          </div>
+          <div class="control-item">
+            <span class="key">Space</span>
+            <span>Пауза</span>
+          </div>
+          <div class="control-item">
+            <span class="key">R</span>
+            <span>Новая игра</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-overlay" id="gameOver" hidden>
+        <div class="overlay-content">
+          <h2>Игра окончена!</h2>
+          <p class="final-score">Счёт: <span id="finalScore">0</span></p>
+          <button class="restart-btn" onclick="newGame()">Играть снова</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

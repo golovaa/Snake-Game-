@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakout — GameHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Кнопка возврата -->
+    <a href="../../index.html" class="back-button" aria-label="Назад на главную">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      <span>Главная</span>
+    </a>
+
+    <div class="game-wrapper">
+      <div class="game-header">
+        <h1>Breakout</h1>
+        <div class="game-stats">
+          <div class="stat-item">
+            <span class="stat-label">Счёт:</span>
+            <span class="stat-value" id="score">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Жизни:</span>
+            <span class="stat-value" id="lives">3</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Уровень:</span>
+            <span class="stat-value" id="level">1</span>
+          </div>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" width="800" height="600"></canvas>
+
+      <div class="game-controls">
+        <button class="control-btn" onclick="newGame()">Новая игра</button>
+        <button class="control-btn" onclick="togglePause()">
+          <span id="pauseText">Пауза</span>
+        </button>
+      </div>
+
+      <div class="instructions">
+        <h3>Управление:</h3>
+        <div class="control-list">
+          <div class="control-item">
+            <span class="key">← →</span>
+            <span>Движение платформы</span>
+          </div>
+          <div class="control-item">
+            <span class="key">Мышь</span>
+            <span>Следовать за курсором</span>
+          </div>
+          <div class="control-item">
+            <span class="key">Space</span>
+            <span>Запуск мяча / Пауза</span>
+          </div>
+          <div class="control-item">
+            <span class="key">R</span>
+            <span>Новая игра</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="modal" id="gameOverModal" hidden>
+      <div class="modal-content">
+        <h2>Игра окончена!</h2>
+        <p class="modal-score">Ваш счёт: <span id="finalScore">0</span></p>
+        <button class="restart-btn" onclick="newGame()">Играть снова</button>
+      </div>
+    </div>
+
+    <!-- Victory Modal -->
+    <div class="modal" id="victoryModal" hidden>
+      <div class="modal-content victory">
+        <h2>🎉 Победа!</h2>
+        <p>Уровень пройден!</p>
+        <p class="modal-score">Счёт: <span id="victoryScore">0</span></p>
+        <button class="restart-btn" onclick="nextLevel()">Следующий уровень</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
