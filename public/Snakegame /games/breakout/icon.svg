@@ -1,0 +1,57 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="paddle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6ef09a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5ADC82;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="ball">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e0e0;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="80" height="80" rx="16" fill="#1a1f28"/>
+  
+  <!-- Bricks - Top row (Red) -->
+  <rect x="5" y="8" width="12" height="6" rx="1" fill="#FF6B6B"/>
+  <rect x="19" y="8" width="12" height="6" rx="1" fill="#FF6B6B"/>
+  <rect x="33" y="8" width="12" height="6" rx="1" fill="#FF6B6B"/>
+  <rect x="47" y="8" width="12" height="6" rx="1" fill="#FF6B6B"/>
+  <rect x="61" y="8" width="12" height="6" rx="1" fill="#FF6B6B"/>
+  
+  <!-- Bricks - Second row (Orange) -->
+  <rect x="5" y="16" width="12" height="6" rx="1" fill="#F59563"/>
+  <rect x="19" y="16" width="12" height="6" rx="1" fill="#F59563"/>
+  <rect x="33" y="16" width="12" height="6" rx="1" fill="#F59563"/>
+  <rect x="47" y="16" width="12" height="6" rx="1" fill="#F59563"/>
+  <rect x="61" y="16" width="12" height="6" rx="1" fill="#F59563"/>
+  
+  <!-- Bricks - Third row (Yellow) -->
+  <rect x="5" y="24" width="12" height="6" rx="1" fill="#FFD93D"/>
+  <rect x="19" y="24" width="12" height="6" rx="1" fill="#FFD93D"/>
+  <rect x="33" y="24" width="12" height="6" rx="1" fill="#FFD93D"/>
+  <rect x="47" y="24" width="12" height="6" rx="1" fill="#FFD93D"/>
+  <rect x="61" y="24" width="12" height="6" rx="1" fill="#FFD93D"/>
+  
+  <!-- Bricks - Fourth row (Green) -->
+  <rect x="5" y="32" width="12" height="6" rx="1" fill="#5ADC82"/>
+  <rect x="19" y="32" width="12" height="6" rx="1" fill="#5ADC82"/>
+  <rect x="33" y="32" width="12" height="6" rx="1" fill="#5ADC82"/>
+  <rect x="47" y="32" width="12" height="6" rx="1" fill="#5ADC82"/>
+  <rect x="61" y="32" width="12" height="6" rx="1" fill="#5ADC82"/>
+  
+  <!-- Bricks - Fifth row (Cyan) - with some missing -->
+  <rect x="5" y="40" width="12" height="6" rx="1" fill="#4ECDC4"/>
+  <rect x="33" y="40" width="12" height="6" rx="1" fill="#4ECDC4"/>
+  <rect x="61" y="40" width="12" height="6" rx="1" fill="#4ECDC4"/>
+  
+  <!-- Ball -->
+  <circle cx="25" cy="56" r="5" fill="url(#ball)"/>
+  <circle cx="25" cy="54" r="2" fill="rgba(255, 255, 255, 0.6)"/>
+  
+  <!-- Paddle -->
+  <rect x="20" y="68" width="30" height="5" rx="2" fill="url(#paddle)"/>
+  <rect x="20" y="68" width="30" height="1.5" rx="2" fill="rgba(255, 255, 255, 0.3)"/>
+</svg>
+

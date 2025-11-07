@@ -1,0 +1,56 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tetris1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8E8E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tetris2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ECDC4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#6FE7DD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tetris3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD93D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE76B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="tetris4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6BCF7F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8FE2A1;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- T-piece -->
+  <rect x="25" y="10" width="10" height="10" fill="url(#tetris1)" rx="2"/>
+  <rect x="15" y="20" width="10" height="10" fill="url(#tetris1)" rx="2"/>
+  <rect x="25" y="20" width="10" height="10" fill="url(#tetris1)" rx="2"/>
+  <rect x="35" y="20" width="10" height="10" fill="url(#tetris1)" rx="2"/>
+  
+  <!-- O-piece -->
+  <rect x="50" y="10" width="10" height="10" fill="url(#tetris2)" rx="2"/>
+  <rect x="60" y="10" width="10" height="10" fill="url(#tetris2)" rx="2"/>
+  <rect x="50" y="20" width="10" height="10" fill="url(#tetris2)" rx="2"/>
+  <rect x="60" y="20" width="10" height="10" fill="url(#tetris2)" rx="2"/>
+  
+  <!-- S-piece -->
+  <rect x="20" y="35" width="10" height="10" fill="url(#tetris3)" rx="2"/>
+  <rect x="30" y="35" width="10" height="10" fill="url(#tetris3)" rx="2"/>
+  <rect x="10" y="45" width="10" height="10" fill="url(#tetris3)" rx="2"/>
+  <rect x="20" y="45" width="10" height="10" fill="url(#tetris3)" rx="2"/>
+  
+  <!-- I-piece -->
+  <rect x="45" y="35" width="10" height="10" fill="url(#tetris4)" rx="2"/>
+  <rect x="55" y="35" width="10" height="10" fill="url(#tetris4)" rx="2"/>
+  <rect x="65" y="35" width="10" height="10" fill="url(#tetris4)" rx="2"/>
+  
+  <!-- L-piece -->
+  <rect x="10" y="60" width="10" height="10" fill="#C792EA" rx="2"/>
+  <rect x="20" y="60" width="10" height="10" fill="#C792EA" rx="2"/>
+  <rect x="30" y="60" width="10" height="10" fill="#C792EA" rx="2"/>
+  <rect x="30" y="70" width="10" height="10" fill="#C792EA" rx="2"/>
+  
+  <!-- J-piece -->
+  <rect x="45" y="50" width="10" height="10" fill="#82AAFF" rx="2"/>
+  <rect x="55" y="50" width="10" height="10" fill="#82AAFF" rx="2"/>
+  <rect x="65" y="50" width="10" height="10" fill="#82AAFF" rx="2"/>
+  <rect x="45" y="60" width="10" height="10" fill="#82AAFF" rx="2"/>
+</svg>
+

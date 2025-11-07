@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048 — GameHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Кнопка возврата -->
+    <a href="../../index.html" class="back-button" aria-label="Назад на главную">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      <span>Главная</span>
+    </a>
+
+    <div class="game-wrapper">
+      <div class="game-header">
+        <h1>2048</h1>
+        <div class="score-container">
+          <div class="score-box">
+            <div class="score-label">Счёт</div>
+            <div class="score-value" id="score">0</div>
+          </div>
+          <div class="score-box">
+            <div class="score-label">Рекорд</div>
+            <div class="score-value" id="best">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-info">
+        <p>Используйте <strong>стрелки</strong> для перемещения плиток. Объединяйте одинаковые числа, чтобы достичь <strong>2048</strong>!</p>
+        <button class="new-game-btn" onclick="newGame()">Новая игра</button>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid" id="grid"></div>
+      </div>
+
+      <div class="controls-hint">
+        <div class="control-item">
+          <span class="key">← → ↑ ↓</span>
+          <span>Движение</span>
+        </div>
+        <div class="control-item">
+          <span class="key">R</span>
+          <span>Новая игра</span>
+        </div>
+        <div class="control-item">
+          <span class="key">Свайп</span>
+          <span>На мобильном</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Game Over Modal -->
+    <div class="game-over-modal" id="gameOverModal" hidden>
+      <div class="modal-content">
+        <h2>Игра окончена!</h2>
+        <p class="final-score">Ваш счёт: <span id="finalScore">0</span></p>
+        <button class="restart-btn" onclick="newGame()">Играть снова</button>
+      </div>
+    </div>
+
+    <!-- Win Modal -->
+    <div class="win-modal" id="winModal" hidden>
+      <div class="modal-content">
+        <h2>🎉 Победа!</h2>
+        <p>Вы достигли 2048!</p>
+        <button class="continue-btn" onclick="continueGame()">Продолжить</button>
+        <button class="restart-btn" onclick="newGame()">Новая игра</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
